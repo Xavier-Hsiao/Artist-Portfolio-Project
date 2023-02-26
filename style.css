@@ -1,3 +1,42 @@
 body {
   font-family: Cormorant, serif;
 }
+
+.navbar {
+  margin: 32px;
+}
+
+header h1 {
+  /* To make h1 align with navbar */
+  display: inline-block;
+  font-weight: 300;
+  /* Remove h1 default margin */
+  margin: 0 32px 0 0;
+}
+
+.links {
+  /* To make navbar elements aligned */
+  display: inline-block;
+}
+
+.links ul {
+  /* Remove ul default padding */
+  padding: 0;
+}
+
+.links li {
+  /* To make navbar elements aligned */
+  display: inline-block;
+}
+
+.links a {
+  /* Remove bullet points */
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+a.active {
+  border-bottom: 1px solid black; 
+}
