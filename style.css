@@ -38,5 +38,32 @@ header h1 {
 }
 
 a.active {
-  border-bottom: 1px solid black; 
+  border-bottom: 1px solid black;
+}
+
+.gallery {
+  margin: 0 20px;
+}
+
+.card {
+  display: inline-block;
+  /* Due to whitespace between inline elements we cannot set the width to 50% */
+  width: 49.75%;
+  /* Set margin will destroy 1:1 grid so we use alternate box model and padding instead */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.card img {
+  /* To tell every image take up all space of its parent */
+  width: 100%;
+  height: 500px;
+  /* Set the images to maintain its aspect ratio while filling the element's entire content box */
+  object-fit: cover;
+}
+
+.card h2 {
+  display: inline-block;
+  margin-top: 5px; 
+  font-weight: 300;
 }
