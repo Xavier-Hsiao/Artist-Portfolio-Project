@@ -62,8 +62,41 @@ a.active {
   object-fit: cover;
 }
 
+.card img:hover {
+  opacity: 70%;
+}
+
 .card h2 {
   display: inline-block;
   margin-top: 5px; 
   font-weight: 300;
+}
+
+.about {
+  width: 40%;
+  /* Prevent the width value from becoming smaller than 600px */
+  min-width: 600px;
+  margin: 100px 0 100px 200px;
+}
+
+.about h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.cta {
+  border-bottom: 1px solid black;
+  /* To make the underline not get across the whole container */
+  display: inline-block;
+  padding: 8px;
+  margin-top: 0;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+.contact p {
+  margin: 0;
+  font-size: 20px;
 }
